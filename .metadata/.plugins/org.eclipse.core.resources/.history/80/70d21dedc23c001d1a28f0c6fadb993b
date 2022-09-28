@@ -1,0 +1,17 @@
+package variables;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int öğrenciSayisi = 10;
+		String mesaj="Ögrenci sayısı";
+		System.out.println( mesaj + öğrenciSayisi );
+	
+
+
+		
+
+	}
+
+}

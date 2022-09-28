@@ -1,0 +1,17 @@
+package stringsDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		String mesaj = "Bugun hava çok güzel";
+		System.out.println(mesaj);
+		System.out.println("Eleman sayısı : " + mesaj.length());
+		System.out.println("5.eleman : " + mesaj.charAt(4));
+		// charAt hani ifadeyle başlıyorsa veya bitiyorsa tarzında gruplandırmalarda
+		// kullanabiliriz.
+		System.out.println(mesaj.concat("Yaşasın!"));
+		System.out.println(mesaj);
+	}
+
+}

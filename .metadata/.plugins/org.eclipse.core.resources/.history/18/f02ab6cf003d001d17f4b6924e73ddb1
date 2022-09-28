@@ -1,0 +1,46 @@
+package stringsDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		String mesaj = "Bugun hava çok güzel.";
+		System.out.println(mesaj);
+		System.out.println("Eleman sayısı : " + mesaj.length());
+		System.out.println("5.eleman : " + mesaj.charAt(4));
+		// charAt hani ifadeyle başlıyorsa veya bitiyorsa tarzında gruplandırmalarda
+		// kullanabiliriz.
+		System.out.println(mesaj.concat(" Yaşasın!"));
+		System.out.println(mesaj);
+		// .concat mesaja bişey ekleme yarıyor ama atama yapmıyor .
+
+		System.out.println(mesaj.startsWith("A"));
+		// .starsWith A ile başlıyorsa true döndür . Boolen işlem
+		System.out.println(mesaj.endsWith("B"));
+		// .endswith B ile bitiyorsa true döndür .Boolen işlem
+		char[] karakterler = new char[5];
+		mesaj.getChars(0, 5, karakterler, 0);
+		System.out.println(karakterler);
+		// getChars belirli aralıktaki karekterleri getirmekte kullanılır.
+		System.out.println(mesaj.indexOf('a'));
+		// soldan başladıgında kaçıncı karakterde kullanıldıgını gösteriyor.
+		System.out.println(mesaj.lastIndexOf('a'));
+		// soldan başladıgında kaçıncı karakterde kullanıldıgını gösteriyor.
+
+		System.out.println(mesaj.replace(' ', '-'));
+		// .replace karekterleri degiştirmekte kullanılır.
+		// Bu fonksiyonların hepsi degişkenin ana yapısı üzerindeki
+		// degişikliklerdir.Degişkeni tekrardan kullandığımız zaman bunlar yansımaz
+		// .Eğer yansımasını istiyor isek Yeni değişken atamamız gerekir.
+
+		System.out.println(mesaj.substring(2,5));
+		// .substring fonksiyonu mesajı 2 karekterden itaberen yazdırmak için
+		// kullanılır..substring(2,4) şeklinde fonksiyonu belirtmemiz halinde 2.
+		// karakterden 4. karektere kadarki karekterleri getirecek.
+		for (String kelime: mesaj.split(" ")) {
+			System.out.println(kelime);
+		}
+
+	}
+
+}
